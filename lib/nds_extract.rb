@@ -16,7 +16,10 @@ def directors_totals(nds)
       movie_gross += directors_database[director_index][:movies][movie_index][:worldwide_gross] #√
       movie_index +=1 #√
     end
-    director_gross[director_index] = movie_gross
+    movie_gross[directors_database[director_index]] = movie_gross
+    # director_gross[director_index] = movie_gross
+    # above is totally wrong hash key value assignment step 
+    # I have tried to correct it but the correction may have issues
     director_index +=1 
 
   end
