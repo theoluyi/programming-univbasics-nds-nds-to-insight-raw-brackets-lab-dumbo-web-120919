@@ -6,17 +6,18 @@ def directors_totals(nds)
   # puts directors_database[0][:movies][0][:worldwide_gross] 
   # this points to first director's first movie's gross 
   
-  
+  puts nds.count 
   director_gross = {}
   director_index = 0 
   while director_index < nds.count do
     movie_gross = 0
-    movie_index = 0 
+    movie_index = 0
     
     while movie_index < nds[director_index][:movies].count do
       
       movie_gross += nds[director_index][:movies][movie_index][:worldwide_gross] #√
       movie_index +=1 #√
+      
     end
     
     director_name = nds[director_index]
