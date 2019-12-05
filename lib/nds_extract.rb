@@ -7,27 +7,27 @@ def directors_totals(nds)
   # this points to first director's first movie's gross 
   
   puts nds[0][:movies][0][:worldwide_gross] 
-  # director_gross = {}
-  # director_index = 0 
-  # while director_index < directors_database.count do
-  #   movie_gross = 0
-  #   movie_index = 0 
+  director_gross = {}
+  director_index = 0 
+  while director_index < directors_database.count do
+    movie_gross = 0
+    movie_index = 0 
     
-  #   while movie_index < directors_database[director_index][:movies].count do
+    while movie_index < directors_database[director_index][:movies].count do
       
-  #     movie_gross += directors_database[director_index][:movies][movie_index][:worldwide_gross] #√
-  #     movie_index +=1 #√
-  #   end
+      movie_gross += directors_database[director_index][:movies][movie_index][:worldwide_gross] #√
+      movie_index +=1 #√
+    end
     
-  #   director_name = directors_database[director_index]
+    director_name = directors_database[director_index]
     
-  #   director_gross[:director_name] = movie_gross
+    director_gross[:director_name] = movie_gross
     
-  #   # director_gross[director_index] = movie_gross
-  #   # above is totally wrong hash key value assignment step 
-  #   # I have tried to correct it but the correction may have issues
-  #   director_index +=1 
+    # director_gross[director_index] = movie_gross
+    # above is totally wrong hash key value assignment step 
+    # I have tried to correct it but the correction may have issues
+    director_index +=1 
 
-  # end
-  # return director_gross
+  end
+  return director_gross
 end
