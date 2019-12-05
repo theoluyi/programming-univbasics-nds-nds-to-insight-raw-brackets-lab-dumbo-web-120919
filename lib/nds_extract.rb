@@ -7,7 +7,7 @@ def directors_totals(nds)
   # this points to first director's first movie's gross 
   
   pp nds 
-  
+  puts 
   # director_gross = {}
   # director_index = 0 
   # while director_index < directors_database.count do
