@@ -11,11 +11,13 @@ def directors_totals(nds)
   while director_index < directors_database.count do
     movie_gross = 0
     movie_index = 0 
+    
     while movie_index < directors_database[director_index][:movies].count do
       
       movie_gross += directors_database[director_index][:movies][movie_index][:worldwide_gross] #√
       movie_index +=1 #√
     end
+    
     movie_gross[directors_database[director_index]] = movie_gross
     # director_gross[director_index] = movie_gross
     # above is totally wrong hash key value assignment step 
