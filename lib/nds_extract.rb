@@ -6,7 +6,7 @@ def directors_totals(nds)
   # puts directors_database[0][:movies][0][:worldwide_gross] 
   # this points to first director's first movie's gross 
   
-  pp nds 
+  # pp nds 
   puts nds[0][:movies][0][:worldwide_gross] 
   # director_gross = {}
   # director_index = 0 
