@@ -19,7 +19,7 @@ def directors_totals(nds)
       movie_index +=1 #√
     end
     
-    director_name = directors_database[director_index]
+    director_name = nds[director_index]
     
     director_gross[:director_name] = movie_gross
     
