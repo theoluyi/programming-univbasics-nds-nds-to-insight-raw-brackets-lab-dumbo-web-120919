@@ -2,7 +2,6 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
 
 def directors_totals(nds)
-  #  learn --fail-fast
   # puts directors_database[0][:movies][0][:worldwide_gross] 
   # this points to first director's first movie's gross 
   
@@ -15,12 +14,16 @@ def directors_totals(nds)
     while movie_index < nds[director_index][:movies].count do
       
       movie_gross += nds[director_index][:movies][movie_index][:worldwide_gross] #√
-      puts nds[director_index][:movies][movie_index][:worldwide_gross]
+      # puts nds[director_index][:movies][movie_index][:worldwide_gross] #√
+      # by above puts test, this is successfully iterating thru A) movies and 
+      # B) directors 
       movie_index +=1 #√
       
     end
     
+    #  learn --fail-fast
     director_name = nds[director_index]
+    puts nds[director_index]
     
     director_gross[:director_name] = movie_gross
     
