@@ -13,7 +13,6 @@ def directors_totals(nds)
     movie_index = 0 
     while movie_index < directors_database[director_index][:movies].count do
       
-    # check that all are movie_gross not plural
       movie_gross += directors_database[director_index][:movies][movie_index][:worldwide_gross]
       movie_index +=1 
     end
