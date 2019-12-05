@@ -22,10 +22,10 @@ def directors_totals(nds)
     end
     
     #  learn --fail-fast
-    director_name = nds[director_index]
-    puts nds[director_index]
+    director_name = nds[director_index][:name]
+    puts director_name
     
-    director_gross[:director_name] = movie_gross
+    director_gross[director_name] = movie_gross
     
     # director_gross[director_index] = movie_gross
     # above is totally wrong hash key value assignment step 
