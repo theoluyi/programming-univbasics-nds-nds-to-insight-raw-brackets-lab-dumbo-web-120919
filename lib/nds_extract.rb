@@ -30,5 +30,5 @@ def directors_totals(nds)
     director_index +=1 
 
   end
-  return director_gross
+  puts director_gross
 end
